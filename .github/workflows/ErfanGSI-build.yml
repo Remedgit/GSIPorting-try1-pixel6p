@@ -58,7 +58,7 @@ jobs:
         run: |
           sudo sed -i 's/USE_MIRROR_FOR_PIP\=true/USE_MIRROR_FOR_PIP\=false/' $GITHUB_WORKSPACE/ErfanGSIs/setup.sh
           sudo bash $GITHUB_WORKSPACE/ErfanGSIs/setup.sh
-          sudo apt-get -y --purge remove "openjdk-11"
+          sudo apt-get -y --purge remove "openjdk-11-jre"
           java -version
           pip3 install aligo
 
